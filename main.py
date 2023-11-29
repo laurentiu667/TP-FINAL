@@ -67,9 +67,9 @@ class Modele:
             [(1150, 550, 1100, 550), "grey"]
         ]
 
-    def supprimer_creep(self):
+    def supprimer_creep(self, creep):
         self.vies_chateau -= 1
-        self.creeps_en_jeu.remove(self)
+        self.creeps_en_jeu.remove(creep)
         # add creep dans une liste de creep_mort[]
         # puis lorsque les creeps ont fini de bouger, enlever creep de la liste de creep en jeu
 
